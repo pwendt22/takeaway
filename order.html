@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- HTML5 doctype -->
+<html lang="en"> <!-- HTML5 opening HTML tag with language. The HTML tag can also be used on it's own now. -->
+	<head>
+		<meta charset="UTF-8"> <!-- HTML5 charset -->
+		<title>Mr. Burrito™!</title>
+		<script type="text/javascript" src="formulas.js"></script>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css"/> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="container2">
+			<div id="bar1">
+				<img src="burritinho.png" id="image" alt="image1"/>
+			</div>		
+			<div class="all">
+				<form name="burritoForm" id= "burritoOrder" action="">
+					<table class="styled-table">
+						<tr>
+							<td>
+								<label>Be happy, select the size of your hunger:</label>
+								<select id="bsize" class="formato" required onchange="choiceSS(this);">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="LA">Large  &euro; 7</option>
+								<option value="XL">Extra Large  &euro; 9</option>
+								<option value="SS">Super Size &euro; 17.50</option>
+								</select><br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>How many Burritos? </label>
+								<input title="Quantity" id="burrits" name="burrits" type="text" size="2" pattern=".{9,}" title="It must has to be a number" required 
+									maxlength="3"  onchange="allnumeric(document.burritoForm.burrits,document.burritoForm.bsize)"><br>
+							</td> 
+						</tr> 			
+						<tr>
+							<td>							
+								<form onsubmit="">	
+									<label>Coupon:</label>	
+									<label style="width:50px;"><input type="text" name="coupon" id="in" class="coupon" title="Enter coupon">
+									<span id="usernameError"></span></label>
+									<input type="button" value="Validate" id="cup1" onClick="validate(coupon)" /><br/>
+									<span id="message"></span>
+									<span id="err"></span>	<br/><br/>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label><b>Total: &euro; 		</b></label>
+								<input name="tot_amount" id="tot_amount" type="text" readonly>
+								<input type="submit" id="send" onclick="resetForm()"   value="Confirm order"/>
+							</td>					
+						</tr>	
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+		

@@ -1,0 +1,163 @@
+body{
+		font-family: Arial;
+		background-image: linear-gradient(90deg,yellow, orange);
+		color:black;
+}
+#image{
+	border-radius:20%;
+}
+/*Div related to the page index*/
+div{
+	
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	padding:13px;
+	border-radius:15px;
+	color:white;
+	justify-content: space-around;
+}
+.styled-table{
+	justify-content: space-around;
+	border-color:grey;
+	color:red;
+	font-family:fantasy;
+	
+}
+/* Containers are easier to organize the divs with the image*/
+.container1{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	margin:auto;
+}
+.container2{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	padding:50px;
+	
+}
+
+input{
+	padding:10px;
+	border:none;
+	outline:none;
+	font-size:15px;
+	
+}
+button{
+	background-color:grey;
+	padding:10px;
+	width:100%;
+	border-radius:10px;
+	color:white;
+	font-size:15px;
+}
+button:hover{
+	background-color:deepskyblue;
+}	
+
+#message{
+  position: relative;
+  top: 10px;
+  color:red;
+}
+#err{
+  position: relative;
+  top: 10px;
+  color:black;
+}
+input, select, textearea, button{
+	border-radius:5px;
+	padding:10px;
+}
+.formato{
+	height:3em;
+	margin-bottom:10%;	
+	
+}
+/*Div related to the order page*/
+.all{
+	margin-left:130px;
+	color:black;
+	border-color:grey;
+	background-color:yellow;
+	text-align:center;
+	padding:5px;
+}
+.tela-login{
+	margin-left:170px;
+	color:grey;
+	font-size:10px;
+	border-color:grey;
+	padding:30px;
+	background-color:yellow;
+}
+#usrname{
+		border-color:grey;
+}
+#heading{
+	color:red;
+	font-family: fantasy;	
+	font-size:20px;
+}
+h1{
+	text-align:center;
+}
+#burrits{
+	padding:10px;
+	border:solid;
+	border-color:red;
+	outline:none;
+	font-size:15px;
+	background-color:yellow;
+	height:10px;
+}
+#in{
+	padding:10px;
+	border:none;
+	outline:none;
+	font-size:15px;
+	background-color:yellow;
+	border:solid;
+	border-color:red;
+}
+#tot_amount{
+	padding:10px;
+	border:solid;
+	border-color:red;
+	outline:none;
+	font-size:15px;
+	background-color:yellow;
+	width:30%;
+	text-align:center;
+	height:10px;
+}
+
+
+input[type="button"] {
+	background-color:red;
+	padding:10px;
+	width:50%;
+	border-radius:10px;
+	color:white;
+	font-size:15px;
+	margin-top:10px;
+}
+#bsize{
+	border:solid;
+	border-color:red;
+	background-color:yellow;
+}
+
+#send{
+	background-color:red;
+	padding:10px;
+	width:60%;
+	border-radius:10px;
+	color:white;
+	font-size:15px;
+	margin-top:10px;
+}
